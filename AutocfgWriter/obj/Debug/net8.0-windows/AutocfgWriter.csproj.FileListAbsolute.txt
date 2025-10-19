@@ -1,0 +1,17 @@
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\bin\Debug\net8.0-windows\AutocfgWriter.exe
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\bin\Debug\net8.0-windows\AutocfgWriter.deps.json
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\bin\Debug\net8.0-windows\AutocfgWriter.runtimeconfig.json
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\bin\Debug\net8.0-windows\AutocfgWriter.dll
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\bin\Debug\net8.0-windows\AutocfgWriter.pdb
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.Form1.resources
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.csproj.GenerateResource.cache
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.GeneratedMSBuildEditorConfig.editorconfig
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.AssemblyInfoInputs.cache
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.AssemblyInfo.cs
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.csproj.CoreCompileInputs.cache
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.sourcelink.json
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.dll
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\refint\AutocfgWriter.dll
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.pdb
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\AutocfgWriter.genruntimeconfig.cache
+D:\csProject\AutocfgWriterFinVer\AutocfgWriterFinver\AutocfgWriter\obj\Debug\net8.0-windows\ref\AutocfgWriter.dll

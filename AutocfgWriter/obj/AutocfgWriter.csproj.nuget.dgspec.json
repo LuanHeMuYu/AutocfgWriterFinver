@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\csProject\\AutocfgWriter\\AutocfgWriter\\AutocfgWriter.csproj": {}
+    "D:\\csProject\\AutocfgWriterFinVer\\AutocfgWriterFinver\\AutocfgWriter\\AutocfgWriter.csproj": {}
   },
   "projects": {
-    "D:\\csProject\\AutocfgWriter\\AutocfgWriter\\AutocfgWriter.csproj": {
+    "D:\\csProject\\AutocfgWriterFinVer\\AutocfgWriterFinver\\AutocfgWriter\\AutocfgWriter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\csProject\\AutocfgWriter\\AutocfgWriter\\AutocfgWriter.csproj",
+        "projectUniqueName": "D:\\csProject\\AutocfgWriterFinVer\\AutocfgWriterFinver\\AutocfgWriter\\AutocfgWriter.csproj",
         "projectName": "AutocfgWriter",
-        "projectPath": "D:\\csProject\\AutocfgWriter\\AutocfgWriter\\AutocfgWriter.csproj",
+        "projectPath": "D:\\csProject\\AutocfgWriterFinVer\\AutocfgWriterFinver\\AutocfgWriter\\AutocfgWriter.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\csProject\\AutocfgWriter\\AutocfgWriter\\obj\\",
+        "outputPath": "D:\\csProject\\AutocfgWriterFinVer\\AutocfgWriterFinver\\AutocfgWriter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
