@@ -12,6 +12,6 @@ namespace AutocfgWriter
         private void button1_Click(object sender, EventArgs e)
         {
             cp.Parser();
-        }
+         }
     }
 }

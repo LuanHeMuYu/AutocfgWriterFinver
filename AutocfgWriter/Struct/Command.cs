@@ -13,12 +13,18 @@ namespace AutocfgWriter.Struct
         /// </summary>
         public string[] anno { get; set; }
         /// <summary>
-        /// command 名字
-        /// </summary>
-        public string Name { get; set; }
-        /// <summary>
-        /// alias 值
+        /// command 值
         /// </summary>
         public string Value { get; set; }
+
+        public Command(string line) {
+            Value = line;
+        }
+        public Command(string line,string[] anno)
+        {
+            Value = line;
+            this.anno = anno;
+        }
+
     }
 }

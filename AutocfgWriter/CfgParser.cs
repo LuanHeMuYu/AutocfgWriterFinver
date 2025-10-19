@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 
 using AutocfgWriter.Struct;
+using System.Diagnostics;
 
 namespace AutocfgWriter
 {
@@ -42,7 +43,7 @@ namespace AutocfgWriter
                         Cap.addAlias(new Alias(line, anno.ToArray()));
                         anno.Clear();
                     }
-                    else {
+                    else if(line != "") {
                         //command
                         Cap.addCommand(new Command(line,anno.ToArray()));
                         anno.Clear();
@@ -52,6 +53,9 @@ namespace AutocfgWriter
             {
                 Console.WriteLine(ex.ToString());
             }
+            Cap.TailsAnno = anno;
+
+            Debug.WriteLine("Parse Finish!");
         } 
     }
 }
