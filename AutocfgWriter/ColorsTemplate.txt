@@ -1,0 +1,24 @@
+﻿cl_glow_ability Human 生还看队友被控
+cl_glow_ability_colorblind Human unknown
+cl_glow_ghost_infected Infected 特感视角看特感轮廓颜色<未重生>
+cl_glow_infected Infected 特感视角看特感轮廓颜色<已重生>
+cl_glow_infected_vomit Infected 特感视角看生还被喷
+cl_glow_item Human 生还看近处物品
+cl_glow_item_far Human 生还看远处物品
+cl_glow_survivor Human 生还视角看队友轮廓
+cl_glow_survivor_health_bleed_pulse Human 脉冲是否很显眼(1或者0)<1的话就是有虚血就闪>
+cl_glow_survivor_health_bleed_pulse_amount Human 虚血闪光<有点闪眼睛 不大建议>
+cl_glow_survivor_health_bleed_pulse_speed Human 脉冲频率(0-100)
+cl_glow_survivor_health_crit Human unknown
+cl_glow_survivor_health_crit_colorblind Human unknown
+cl_glow_survivor_health_low Human unknown
+cl_glow_survivor_health_low_colorblind Infected unknown
+cl_glow_survivor_health_med Infected unknown
+cl_glow_survivor_health_med_colorblind Infected unknown
+cl_glow_survivor_health_high Human unknown
+cl_glow_survivor_health_high_colorblind Human unknown
+cl_glow_survivor_health_include_buffer Human unknown
+cl_glow_survivor_hurt_b Human 生还视角看队友被控/倒地/挂边
+cl_glow_survivor_vomit Human 生还视角看队友被吐
+cl_glow_thirdstrike_item Human 坦克打铁颜色和生还黑白时物品边框颜色
+cl_glow_thirdstrike_item_colorblind_b Human unknown

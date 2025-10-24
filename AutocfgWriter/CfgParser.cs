@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-using AutocfgWriter.Struct;
 using System.Diagnostics;
+using AutocfgWriter.Struct.ColorStruct;
+using AutocfgWriter.Struct.KeyStruct;
 
 namespace AutocfgWriter
 {
@@ -43,9 +44,19 @@ namespace AutocfgWriter
                         Cap.addAlias(new Alias(line, anno.ToArray()));
                         anno.Clear();
                     }
-                    else if(line != "") {
+                    else if (line.StartsWith("cl_glow"))
+                    {
+                        AzColor.ParseColor(line, anno);
+                        anno.Clear();
+                    }
+                    else if (line.StartsWith("cl_crosshair"))
+                    {
+
+                    }
+                    else if (line != "")
+                    {
                         //command
-                        Cap.addCommand(new Command(line,anno.ToArray()));
+                        Cap.addCommand(new Command(line, anno.ToArray()));
                         anno.Clear();
                     }
             }
@@ -56,6 +67,6 @@ namespace AutocfgWriter
             Cap.TailsAnno = anno;
 
             Debug.WriteLine("Parse Finish!");
-        } 
+        }
     }
 }

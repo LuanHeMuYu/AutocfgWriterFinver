@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutocfgWriter.Struct.ColorStruct;
+using AutocfgWriter.Struct.KeyStruct;
 
-namespace AutocfgWriter.Struct
+namespace AutocfgWriter
 {
     internal static class Cap
     {
@@ -16,6 +18,13 @@ namespace AutocfgWriter.Struct
         public static List<Command> commands = new List<Command>();
         //可能存在的末尾注释
         public static List<string> TailsAnno = new List<string>();
+        //颜色类
+        public static HashSet<AzColor> colors = new HashSet<AzColor>();
+        //准星颜色
+        public static HashSet<CrossHairColor> crosshairColor = new HashSet<CrossHairColor>();
+
+        //颜色分类和注释
+        public static Dictionary<string, AzColor> colorEntry = new Dictionary<string, AzColor>();
 
         public static void addAlias(Alias e) { 
             aliases.Add(e);
@@ -43,6 +52,21 @@ namespace AutocfgWriter.Struct
         }
         public static void addAnno(string s) {
             TailsAnno.Add(s);
+        }
+
+        public static void addColor(AzColor ac) {
+            colors.Add(ac);
+        }
+        public static void removeColor(AzColor ac) {
+            colors.Remove(ac);
+        }
+
+        public static void addCrosshairColor(CrossHairColor cc) { 
+            crosshairColor.Add(cc);
+        }
+
+        public static void removeCrosshairColor(CrossHairColor cc) { 
+            crosshairColor.Remove(cc);
         }
 
     }
