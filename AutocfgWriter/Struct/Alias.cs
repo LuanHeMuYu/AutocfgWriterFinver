@@ -3,16 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Text.RegularExpressions;
-
+using AutocfgWriter.Utils;
 
 namespace AutocfgWriter.Struct
 {
     internal class Alias
     {
-        //使用正则表达式取值
-        public static readonly string AliasPattern = @"^alias\s+(\w+)\s+""(.+?)""$";
-
         /// <summary>
         /// 注释
         /// </summary>
@@ -28,14 +24,14 @@ namespace AutocfgWriter.Struct
 
         public Alias(string str)
         {
-            string[] strs = Regex.Split(str,AliasPattern);
+            string[] strs = StringSpliter.split(str,3);
             this.Name = strs[1];
             this.Value = strs[2];
         }
 
         public Alias(string str, string[] anno)
         {
-            string[] strs = Regex.Split(str, AliasPattern);
+            string[] strs = StringSpliter.split(str, 3);
             this.Name = strs[1];
             this.Value = strs[2];
             this.anno = anno;
