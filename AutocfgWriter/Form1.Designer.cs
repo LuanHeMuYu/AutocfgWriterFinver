@@ -32,10 +32,10 @@
             ImportToolStripMenuItem = new ToolStripMenuItem();
             ExportToolStripMenuItem = new ToolStripMenuItem();
             PreviewcfgToolStripMenuItem = new ToolStripMenuItem();
+            ImportLauguageToolStripMenuItem = new ToolStripMenuItem();
             TabControl = new TabControl();
             KeyBind = new TabPage();
             ColorEdge = new TabPage();
-            导入语言包ToolStripMenuItem = new ToolStripMenuItem();
             ColorEdgeDetails = new TabControl();
             HumanVisionColor = new TabPage();
             SpecialInfectedVision = new TabPage();
@@ -50,7 +50,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { ImportToolStripMenuItem, ExportToolStripMenuItem, PreviewcfgToolStripMenuItem, 导入语言包ToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ImportToolStripMenuItem, ExportToolStripMenuItem, PreviewcfgToolStripMenuItem, ImportLauguageToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(1206, 28);
@@ -75,6 +75,12 @@
             PreviewcfgToolStripMenuItem.Name = "PreviewcfgToolStripMenuItem";
             PreviewcfgToolStripMenuItem.Size = new Size(76, 24);
             PreviewcfgToolStripMenuItem.Text = "预览cfg";
+            // 
+            // ImportLauguageToolStripMenuItem
+            // 
+            ImportLauguageToolStripMenuItem.Name = "ImportLauguageToolStripMenuItem";
+            ImportLauguageToolStripMenuItem.Size = new Size(98, 24);
+            ImportLauguageToolStripMenuItem.Text = "导入语言包";
             // 
             // TabControl
             // 
@@ -106,12 +112,6 @@
             ColorEdge.TabIndex = 1;
             ColorEdge.Text = "颜色绑定";
             ColorEdge.UseVisualStyleBackColor = true;
-            // 
-            // 导入语言包ToolStripMenuItem
-            // 
-            导入语言包ToolStripMenuItem.Name = "导入语言包ToolStripMenuItem";
-            导入语言包ToolStripMenuItem.Size = new Size(98, 24);
-            导入语言包ToolStripMenuItem.Text = "导入语言包";
             // 
             // ColorEdgeDetails
             // 
@@ -195,7 +195,7 @@
         private TabControl TabControl;
         private TabPage KeyBind;
         private TabPage ColorEdge;
-        private ToolStripMenuItem 导入语言包ToolStripMenuItem;
+        private ToolStripMenuItem ImportLauguageToolStripMenuItem;
         private TabControl ColorEdgeDetails;
         private TabPage HumanVisionColor;
         private TabPage SpecialInfectedVision;

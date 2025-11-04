@@ -12,8 +12,8 @@ namespace AutocfgWriter
     {
         //所有alias
         public static List<Alias> aliases = new List<Alias>();
-        //所有binds
-        public static List<Bind> binds = new List<Bind>();
+        //所有binds 
+        public static Dictionary<string, Tuple<string, string[]>> Bind = new Dictionary<string, Tuple<string, string[]>>();
         //所有的纯指令类
         public static List<Command> commands = new List<Command>();
         //可能存在的末尾注释

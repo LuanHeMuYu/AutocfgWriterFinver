@@ -7,6 +7,11 @@ using AutocfgWriter.Utils;
 
 namespace AutocfgWriter.Struct.KeyStruct
 {
+    // 2025年11月4日 Reconstruct Alias
+    // string * 3 ==> HashMap<string,Tuple<string,string>>
+    // Tuple 内的元素解释: 
+    //      指令 + 注释
+    [Obsolete("这个类已经被Dict替代了，不要再使用了")]
     internal class Alias
     {
         /// <summary>
