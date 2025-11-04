@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace AutocfgWriter.Struct.KeyStruct
 {
+    // 2025年11月4日 Reconstruct command
+    // string * 2 ==> HashSet<Tuple<string, string[]>>
+    // Tuple 内的元素解释: 
+    //      指令 + 注释
+    [Obsolete("这个类已经被Hashset替换，请不要再使用了",true)]
     internal class Command
     {
         /// <summary>

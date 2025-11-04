@@ -36,12 +36,12 @@ namespace AutocfgWriter
                         anno.Add(line);
                     else if (line.StartsWith("bind"))
                     {
-                        Cap.addBind(new Bind(line, anno.ToArray()));
+                        Cap.addBind(line, anno.ToArray());
                         anno.Clear();
                     }
                     else if (line.StartsWith("alias"))
                     {
-                        Cap.addAlias(new Alias(line, anno.ToArray()));
+                        Cap.addAlias(line, anno.ToArray());
                         anno.Clear();
                     }
                     else if (line.StartsWith("cl_glow"))
@@ -56,7 +56,7 @@ namespace AutocfgWriter
                     else if (line != "")
                     {
                         //command
-                        Cap.addCommand(new Command(line, anno.ToArray()));
+                        Cap.addCommand(line, anno.ToArray());
                         anno.Clear();
                     }
             }
@@ -64,7 +64,7 @@ namespace AutocfgWriter
             {
                 Console.WriteLine(ex.ToString());
             }
-            Cap.TailsAnno = anno;
+            Cap.setTailsAnnos(anno);
 
             Debug.WriteLine("Parse Finish!");
         }
