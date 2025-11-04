@@ -69,6 +69,7 @@
             ExportToolStripMenuItem.Name = "ExportToolStripMenuItem";
             ExportToolStripMenuItem.Size = new Size(53, 24);
             ExportToolStripMenuItem.Text = "导出";
+            ExportToolStripMenuItem.Click += ExportToolStripMenuItem_Click;
             // 
             // PreviewcfgToolStripMenuItem
             // 

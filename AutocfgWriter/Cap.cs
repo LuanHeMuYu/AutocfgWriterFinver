@@ -19,6 +19,7 @@ namespace AutocfgWriter
         private static HashSet<Tuple<string, string[]>> commands = new HashSet<Tuple<string, string[]>>();
         //可能存在的末尾注释
         private static List<string> TailsAnno = new List<string>();
+        
         //颜色类
         public static HashSet<AzColor> colors = new HashSet<AzColor>();
         //准星颜色
@@ -70,6 +71,50 @@ namespace AutocfgWriter
         public static void setTailsAnnos(List<string> annos)
         {
             TailsAnno = annos;
+        }
+
+        /// <summary>
+        /// 把所有的Cap导出到一个位置去
+        /// </summary>
+        public static void export(string output) {
+            using (StreamWriter sw = new StreamWriter(Path.Combine(output,"yourcfg.cfg"))) {
+                //Binds
+                foreach (var item in binds) { 
+                    string key = item.Key;
+                    string val = item.Value.Item1;
+                    string[] annos = item.Value.Item2;
+
+                    //annos first
+                    foreach (string anno in annos)
+                        sw.WriteLine(anno);
+                    //bind + key + val
+                    sw.WriteLine($"bind {key} {val}");
+                }
+
+                //Alias
+                foreach (var item in aliases)
+                {
+                    string key = item.Key;
+                    string val = item.Value.Item1;
+                    string[] annos = item.Value.Item2;
+
+                    //annos first
+                    foreach (string anno in annos)
+                        sw.WriteLine(anno);
+                    sw.WriteLine($"alias {key} {val}");
+                }
+
+                //command
+                foreach (var item in commands) {
+                    string command = item.Item1;
+                    string[] annos = item.Item2;
+
+                    //annos first
+                    foreach (string anno in annos)
+                        sw.WriteLine(anno);
+                    sw.WriteLine($"{command}");
+                }
+            }
         }
 
     }

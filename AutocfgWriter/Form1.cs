@@ -1,4 +1,6 @@
 using AutocfgWriter.Struct.ColorStruct;
+using AutocfgWriter.Utils;
+using System.Windows.Forms;
 
 namespace AutocfgWriter
 {
@@ -28,15 +30,20 @@ namespace AutocfgWriter
 
         private void ImportToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
+            string path = OtherUtils.PopFileChoose();
+            if (!path.Equals(DialogResult.Cancel | DialogResult.No))
             {
-                openFileDialog.Filter = "cfg нд╪Ч (.cfg)|*.cfg";
+                cp = new CfgParser(path);
+                cp.Parser();
+            }
+        }
 
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    cp = new CfgParser(openFileDialog.FileName);
-                    cp.Parser();
-                }
+        private void ExportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string path = OtherUtils.PopFolderChoose();
+            if (!path.Equals(DialogResult.Cancel | DialogResult.No))
+            {
+                Cap.export(path);
             }
         }
     }
