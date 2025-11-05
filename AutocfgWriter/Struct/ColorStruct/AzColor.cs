@@ -46,6 +46,10 @@ namespace AutocfgWriter.Struct.ColorStruct
             this.types = types;
         }
 
+        /// <summary>
+        /// 导出
+        /// </summary>
+        /// <returns></returns>
         public string[] Export()
         {
             return new string[] {
@@ -66,6 +70,11 @@ namespace AutocfgWriter.Struct.ColorStruct
             }
         }
 
+        /// <summary>
+        /// 解析颜色 (using string)
+        /// </summary>
+        /// <param name="str">文本</param>
+        /// <param name="annos">注释</param>
         public static void ParseColor(string str, List<string> annos)
         {
             string[] split = str.Split(" ");

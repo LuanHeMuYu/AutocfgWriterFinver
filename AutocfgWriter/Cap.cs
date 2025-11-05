@@ -22,8 +22,8 @@ namespace AutocfgWriter
         
         //颜色类
         public static HashSet<AzColor> colors = new HashSet<AzColor>();
-        //准星颜色
-        public static HashSet<CrossHairColor> crosshairColor = new HashSet<CrossHairColor>();
+        //准星颜色 r g b annos
+        public static CrossHair crosshairColor = new CrossHair();
         //颜色分类和注释
         public static Dictionary<string, AzColor> colorEntry = new Dictionary<string, AzColor>();
 
@@ -58,14 +58,9 @@ namespace AutocfgWriter
             colors.Remove(ac);
         }
 
-        public static void addCrosshairColor(CrossHairColor cc)
+        public static void setCrosshairColor(string line)
         {
-            crosshairColor.Add(cc);
-        }
-
-        public static void removeCrosshairColor(CrossHairColor cc)
-        {
-            crosshairColor.Remove(cc);
+            crosshairColor.parseLine(line);
         }
 
         public static void setTailsAnnos(List<string> annos)
@@ -114,6 +109,19 @@ namespace AutocfgWriter
                         sw.WriteLine(anno);
                     sw.WriteLine($"{command}");
                 }
+
+                //TODO: 颜色导出 
+                // 颜色导出
+                foreach (AzColor color in colors) { 
+                    foreach (string anno in color.annos)
+                        sw.WriteLine(anno);
+                    sw.WriteLine($"{color.command}_r {color.r}");
+                    sw.WriteLine($"{color.command}_g {color.g}");
+                    sw.WriteLine($"{color.command}_b {color.b}");
+                }
+
+                //准星颜色导出
+                sw.WriteLine(crosshairColor.ToString());
             }
         }
 

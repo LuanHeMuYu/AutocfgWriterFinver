@@ -51,7 +51,7 @@ namespace AutocfgWriter
                     }
                     else if (line.StartsWith("cl_crosshair"))
                     {
-
+                        Cap.setCrosshairColor(line);
                     }
                     else if (line != "")
                     {
