@@ -46,5 +46,23 @@ namespace AutocfgWriter
                 Cap.export(path);
             }
         }
+        /// <summary>
+        /// 更改下面的提示词
+        /// </summary>
+        /// <param name="text">字符串</param>
+        /// <param name="isParse">是否解析这串字符</param>
+        public void ChangeStripText(string text,bool isParse) {
+            if (isParse)
+            {
+                //解析就是先去Cap里面寻找有没有这个键位的存在 如果没有 那么就显示空
+                Tuple<string, string[]> val = Cap.getValInBinds(text);
+                if (val.Item1 == "none")
+                    this.toolStripLabel.Text = "还未绑定键位";
+                else
+                    this.toolStripLabel.Text = val.Item1;
+            }
+            else
+                this.toolStripLabel.Text = text;
+        }
     }
 }

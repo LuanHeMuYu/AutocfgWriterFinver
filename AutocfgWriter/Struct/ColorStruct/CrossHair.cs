@@ -64,13 +64,29 @@ namespace AutocfgWriter.Struct.ColorStruct
         }
 
         /// <summary>
-        /// 通过反射获取所有字段
+        /// i want 通过反射获取所有字段
         /// </summary>
         /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            
+
+            if (red != -1)
+                sb.Append($"cl_cross_hair_red {red} \n");
+            if (green != -1)
+                sb.Append($"cl_cross_hair_green {green} \n");
+            if (blue != -1)
+                sb.Append($"cl_cross_hair_blue {blue} \n");
+            if (alpha != -1)
+                sb.Append($"cl_cross_hair_alpha {alpha} \n");
+            if (dynamic != -1)
+                sb.Append($"cl_cross_hair_dynamic {dynamic} \n");
+            if (thickness != -1)
+                sb.Append($"cl_cross_hair_thickness {thickness} \n");
+            if (circle_alpha != -1)
+                sb.Append($"cl_cross_hair_circle_alpha {circle_alpha} \n");
+            if (circle_mode != -1)
+                sb.Append($"cl_cross_hair_circle_mode {circle_mode} \n");
 
             return sb.ToString();
         }
