@@ -70,12 +70,7 @@ namespace AutocfgWriter.Struct.ColorStruct
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
-            foreach (FieldInfo field in this.GetType().GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance))
-            {
-                object value = field.GetValue(this);
-                if(value != null && value.Equals(-1))
-                    sb.AppendLine($"cl_crosshair_{field.Name} {value}");
-            }
+            
 
             return sb.ToString();
         }
