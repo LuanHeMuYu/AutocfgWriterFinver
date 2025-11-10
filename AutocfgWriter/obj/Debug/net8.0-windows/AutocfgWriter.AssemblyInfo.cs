@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutocfgWriter")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09b163b6260e04076ec4d397e42399e9c747f0ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4162606b4931fd7216c0481fe02fac9178400f07")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutocfgWriter")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutocfgWriter")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

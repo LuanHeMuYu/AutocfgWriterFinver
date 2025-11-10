@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AutocfgWriter.AzControl;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AutocfgWriter.UserControl
 {
@@ -56,6 +58,15 @@ namespace AutocfgWriter.UserControl
         protected override void OnMouseClick(MouseEventArgs e)
         {
             base.OnMouseClick(e);
+            BindInputBox bind = new();
+            bind.Show();
+            Tuple<string, string[]> val = Cap.GetValInBinds(this.Name.Replace("Key_",""));
+            string showing;
+            if (val.Item1 == "none")
+                showing = "还未绑定键位";
+            else
+                showing = val.Item1;
+            MessageBox.Show(showing, "这是当前键位的效果");
         }
 
         /// <summary>
