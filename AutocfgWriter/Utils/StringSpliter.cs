@@ -13,7 +13,7 @@ namespace AutocfgWriter.Utils
         /// </summary>
         /// <param name="s"> string </param>
         /// <returns> string[] </returns>
-        public static string[] split(string s,int size) {
+        public static string[] Split(string s,int size) {
             if (size <= 0)
                 return null;
             string[] strs = s.Split(" ");

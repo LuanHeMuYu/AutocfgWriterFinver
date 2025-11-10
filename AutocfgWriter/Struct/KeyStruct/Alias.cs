@@ -29,14 +29,14 @@ namespace AutocfgWriter.Struct.KeyStruct
 
         public Alias(string str)
         {
-            string[] strs = StringSpliter.split(str,3);
+            string[] strs = StringSpliter.Split(str,3);
             Name = strs[1];
             Value = strs[2];
         }
 
         public Alias(string str, string[] anno)
         {
-            string[] strs = StringSpliter.split(str, 3);
+            string[] strs = StringSpliter.Split(str, 3);
             Name = strs[1];
             Value = strs[2];
             this.anno = anno;

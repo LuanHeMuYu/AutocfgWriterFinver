@@ -43,7 +43,7 @@ namespace AutocfgWriter
             string path = OtherUtils.PopFolderChoose();
             if (!path.Equals(DialogResult.Cancel | DialogResult.No))
             {
-                Cap.export(path);
+                Cap.Export(path);
             }
         }
         /// <summary>
@@ -55,7 +55,7 @@ namespace AutocfgWriter
             if (isParse)
             {
                 //解析就是先去Cap里面寻找有没有这个键位的存在 如果没有 那么就显示空
-                Tuple<string, string[]> val = Cap.getValInBinds(text);
+                Tuple<string, string[]> val = Cap.GetValInBinds(text);
                 if (val.Item1 == "none")
                     this.toolStripLabel.Text = "还未绑定键位";
                 else

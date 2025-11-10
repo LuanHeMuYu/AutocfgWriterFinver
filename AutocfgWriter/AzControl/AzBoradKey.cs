@@ -48,5 +48,23 @@ namespace AutocfgWriter.UserControl
                 form.ChangeStripText(this.Name.Replace("Key_",""),true);
             }
         }
+
+        /// <summary>
+        /// 这个方法我希望能弹出来一个窗口 然后显示具体的效果
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnMouseClick(MouseEventArgs e)
+        {
+            base.OnMouseClick(e);
+        }
+
+        /// <summary>
+        /// 这个方法我希望能弹出来一个窗口 然后你可以进行键位的绑定
+        /// </summary>
+        /// <param name="e"></param>
+        protected override void OnMouseDoubleClick(MouseEventArgs e)
+        {
+            base.OnMouseDoubleClick(e);
+        }
     }
 }

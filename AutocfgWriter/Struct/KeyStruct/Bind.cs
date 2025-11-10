@@ -28,14 +28,14 @@ namespace AutocfgWriter.Struct.KeyStruct
         public string Value { get; set; }
         //解析输入的str
         public Bind(string str) {
-            string[] strs = StringSpliter.split(str,3);
+            string[] strs = StringSpliter.Split(str,3);
             Name = strs[1];
             Value = strs[2];
         }
 
         public Bind(string str, string[] anno)
         {
-            string[] strs = StringSpliter.split(str,3);
+            string[] strs = StringSpliter.Split(str,3);
             Name = strs[1];
             Value = strs[2];
             this.anno = anno;

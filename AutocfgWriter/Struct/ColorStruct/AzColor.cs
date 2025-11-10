@@ -32,7 +32,7 @@ namespace AutocfgWriter.Struct.ColorStruct
         }
 
         public AzColor(string types) {
-            this.types.Add(parseType(types));
+            this.types.Add(ParseType(types));
         }
 
         public AzColor(double r, double g, double b, List<string> annos, string command, string? explainer, List<Type> types)
@@ -59,7 +59,7 @@ namespace AutocfgWriter.Struct.ColorStruct
             };
         }
 
-        public Type parseType(string str) {
+        public Type ParseType(string str) {
             switch (str) {
                 case "Human":
                     return Type.Human;

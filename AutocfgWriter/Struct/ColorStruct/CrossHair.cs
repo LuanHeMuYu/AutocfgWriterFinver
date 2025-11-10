@@ -37,28 +37,28 @@ namespace AutocfgWriter.Struct.ColorStruct
         /// 解析准星颜色
         /// </summary>
         /// <param name="line"></param>
-        public void parseLine(string line)
+        public void ParseLine(string line)
         {
             string[] strs = line.Split(" ");
             if (strs[0].EndsWith("red"))
-                setRed(int.Parse(strs[1]));
+                SetRed(int.Parse(strs[1]));
             else if (strs[0].EndsWith("green"))
-                setGreen(int.Parse(strs[1]));
+                SetGreen(int.Parse(strs[1]));
             else if (strs[0].EndsWith("blue"))
-                setBlue(int.Parse(strs[1]));
+                SetBlue(int.Parse(strs[1]));
         }
 
-        public void setRed(int r)
+        public void SetRed(int r)
         {
             this.red = r;
         }
 
-        public void setGreen(int g)
+        public void SetGreen(int g)
         {
             this.green = g;
         }
 
-        public void setBlue(int b)
+        public void SetBlue(int b)
         {
             this.blue = b;
         }
